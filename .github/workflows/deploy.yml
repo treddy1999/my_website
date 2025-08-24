@@ -24,10 +24,19 @@ jobs:
     - name: Build Next.js app
       run: npm run build
       
+    - name: Verify build output
+      run: |
+        echo "Checking if index.html exists..."
+        ls -la out/
+        echo "Checking if _next directory exists..."
+        ls -la out/_next/
+        
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./out
         force_orphan: true
+        user_name: 'github-actions[bot]'
+        user_email: 'github-actions[bot]@users.noreply.github.com'
 
