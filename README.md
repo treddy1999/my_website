@@ -4,7 +4,7 @@ A modern, responsive portfolio website designed specifically to attract HR profe
 
 **🚀 Live Demo**: [View Portfolio](https://treddy1999.github.io/portfolio-website/)
 
-**📱 Status**: Rebuilding and deploying... (Fresh Build)
+**📱 Status**: ✅ Live and Deployed Successfully
 
 ## 🎯 Features
 
@@ -139,7 +139,32 @@ Update the following files with your information:
 
 ## 🚀 Deployment
 
-### Vercel (Recommended)
+### GitHub Pages (Current)
+
+The portfolio is currently deployed on GitHub Pages. To deploy updates:
+
+#### Option 1: Automated Deployment (Recommended)
+1. Push changes to the `main` branch
+2. GitHub Actions will automatically build and deploy
+3. Wait 2-3 minutes for deployment to complete
+
+#### Option 2: Manual Deployment
+1. Run the deployment script:
+   ```bash
+   ./deploy.ps1
+   ```
+2. Or manually:
+   ```bash
+   npm run build
+   git checkout gh-pages
+   # Copy files from out/ to root
+   git add .
+   git commit -m "Deploy update"
+   git push origin gh-pages
+   git checkout main
+   ```
+
+### Vercel (Alternative)
 
 1. Push your code to GitHub
 2. Connect your repository to Vercel
