@@ -17,10 +17,10 @@ export default function Home() {
   const [activeSection, setActiveSection] = useState('home')
 
   useEffect(() => {
-    // Simulate loading time
+    // Reduced loading time for better performance
     const timer = setTimeout(() => {
       setIsLoading(false)
-    }, 1000)
+    }, 500)
 
     return () => clearTimeout(timer)
   }, [])

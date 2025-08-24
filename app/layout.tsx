@@ -93,7 +93,7 @@ export default function RootLayout({
         <meta name="theme-color" content="#2563eb" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </head>
-      <body className={`${inter.className} antialiased bg-neutral-50 text-neutral-900`}>
+      <body className={`${inter.className} antialiased bg-neutral-50 text-neutral-900 overflow-x-hidden`}>
         {children}
       </body>
     </html>
