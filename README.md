@@ -4,6 +4,8 @@ A modern, responsive portfolio website designed specifically to attract HR profe
 
 **🚀 Live Demo**: [View Portfolio](https://treddy1999.github.io/portfolio-website/)
 
+**📱 Status**: Deploying to GitHub Pages...
+
 ## 🎯 Features
 
 ### HR-Focused Design
