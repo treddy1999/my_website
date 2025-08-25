@@ -14,8 +14,35 @@ import BackToTop from '@/components/BackToTop'
 
 export default function Home() {
   const [activeSection, setActiveSection] = useState('home')
+  const [isLoading, setIsLoading] = useState(true)
+  const [hasError, setHasError] = useState(false)
 
   useEffect(() => {
+    // Set a timeout to prevent infinite loading
+    const loadingTimeout = setTimeout(() => {
+      setIsLoading(false)
+    }, 3000)
+
+    // Check if all components are loaded
+    const checkComponentsLoaded = () => {
+      try {
+        // Simple check to see if the page is ready
+        if (document.readyState === 'complete') {
+          setIsLoading(false)
+        }
+      } catch (error) {
+        console.error('Error loading components:', error)
+        setHasError(true)
+        setIsLoading(false)
+      }
+    }
+
+    // Listen for page load
+    window.addEventListener('load', checkComponentsLoaded)
+    
+    // Also check immediately
+    checkComponentsLoaded()
+
     const handleScroll = () => {
       const sections = ['home', 'about', 'experience', 'skills', 'projects', 'contact']
       const scrollPosition = window.scrollY + 100
@@ -35,10 +62,43 @@ export default function Home() {
     }
 
     window.addEventListener('scroll', handleScroll)
-    return () => window.removeEventListener('scroll', handleScroll)
+    
+    return () => {
+      clearTimeout(loadingTimeout)
+      window.removeEventListener('load', checkComponentsLoaded)
+      window.removeEventListener('scroll', handleScroll)
+    }
   }, [])
 
+  // Show loading screen
+  if (isLoading) {
+    return (
+      <div className="min-h-screen flex items-center justify-center bg-neutral-50">
+        <div className="text-center">
+          <div className="w-16 h-16 border-4 border-primary-200 border-t-primary-600 rounded-full animate-spin mx-auto mb-4"></div>
+          <p className="text-neutral-600 font-medium">Loading Portfolio...</p>
+        </div>
+      </div>
+    )
+  }
 
+  // Show error screen
+  if (hasError) {
+    return (
+      <div className="min-h-screen flex items-center justify-center bg-neutral-50">
+        <div className="text-center">
+          <h1 className="text-2xl font-bold text-red-600 mb-4">Something went wrong</h1>
+          <p className="text-neutral-600 mb-4">Please refresh the page to try again.</p>
+          <button 
+            onClick={() => window.location.reload()} 
+            className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700"
+          >
+            Refresh Page
+          </button>
+        </div>
+      </div>
+    )
+  }
 
   return (
     <div className="min-h-screen bg-neutral-50">
