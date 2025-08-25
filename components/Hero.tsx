@@ -68,7 +68,7 @@ export default function Hero() {
             <div className="space-y-4">
               <p className="text-base lg:text-lg text-slate-600 leading-relaxed">
                 I help organizations turn messy data into <span className="text-indigo-600 font-semibold">actionable insights</span>. 
-                With 5+ years in SQL, Snowflake, ETL/SSIS, and Salesforce, I've delivered <span className="text-purple-600 font-semibold">automated pipelines</span> 
+                With 3+ years in SQL, Snowflake, ETL/SSIS, and Salesforce, I've delivered <span className="text-purple-600 font-semibold">automated pipelines</span> 
                 that improved reporting speed by 35% and reduced errors by 20%.
               </p>
               
@@ -94,7 +94,7 @@ export default function Hero() {
             {/* Stats */}
             <div className="grid grid-cols-3 gap-4 lg:gap-6">
               <div className="p-3 rounded-xl bg-gradient-to-br from-blue-50 to-cyan-50 border border-white/50">
-                <div className="text-2xl lg:text-3xl font-black bg-gradient-to-r from-blue-500 to-cyan-500 bg-clip-text text-transparent">5+</div>
+                <div className="text-2xl lg:text-3xl font-black bg-gradient-to-r from-blue-500 to-cyan-500 bg-clip-text text-transparent">3+</div>
                 <div className="text-xs font-medium text-slate-600 mt-1">Years Experience</div>
               </div>
               <div className="p-3 rounded-xl bg-gradient-to-br from-purple-50 to-pink-50 border border-white/50">
