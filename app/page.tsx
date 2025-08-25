@@ -13,14 +13,14 @@ import Footer from '@/components/Footer'
 import BackToTop from '@/components/BackToTop'
 
 export default function Home() {
-  const [isLoading, setIsLoading] = useState(true)
+  const [isLoading, setIsLoading] = useState(false) // Start with false for static export
   const [activeSection, setActiveSection] = useState('home')
 
   useEffect(() => {
-    // Reduced loading time for better performance
+    // Only show loading briefly if needed for hydration
     const timer = setTimeout(() => {
       setIsLoading(false)
-    }, 500)
+    }, 100)
 
     return () => clearTimeout(timer)
   }, [])
