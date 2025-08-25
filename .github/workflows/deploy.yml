@@ -31,7 +31,9 @@ jobs:
       run: npm ci
       
     - name: Build Next.js app
-      run: npm run build
+      run: |
+        echo "Building for production..."
+        NODE_ENV=production npm run build
       
     - name: Verify build output
       run: |
@@ -39,6 +41,10 @@ jobs:
         ls -la out/
         echo "Checking if _next directory exists..."
         ls -la out/_next/
+        echo "Checking if profile picture exists..."
+        ls -la out/profile-pic.jpg
+        echo "Checking if resume exists..."
+        ls -la out/resume.pdf
         echo "Build verification completed successfully!"
         
     - name: Setup Pages

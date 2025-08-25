@@ -15,6 +15,8 @@ const nextConfig = {
   compress: true,
   poweredByHeader: false,
   reactStrictMode: true,
+  // Ensure static export works properly
+  distDir: 'out',
 }
 
 module.exports = nextConfig
