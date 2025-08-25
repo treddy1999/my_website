@@ -197,18 +197,18 @@ export default function Hero() {
           >
             <div className="relative">
               <div className="relative w-72 h-72 lg:w-80 lg:h-80">
-                {/* Profile Container */}
-                <div className="relative w-full h-full bg-gradient-to-br from-white via-indigo-50/30 to-purple-50/30 rounded-full backdrop-blur-sm border border-white/50 shadow-2xl overflow-hidden">
+                                 {/* Profile Container */}
+                 <div className="relative w-full h-full bg-gradient-to-br from-white via-indigo-50/30 to-purple-50/30 rounded-3xl backdrop-blur-sm border border-white/50 shadow-2xl overflow-hidden">
                   {/* Profile Content */}
                   <div className="relative w-full h-full flex flex-col items-center justify-center p-8">
-                    {/* Profile Image */}
-                    <div className="w-48 h-48 lg:w-56 lg:h-56 rounded-full bg-gradient-to-br from-indigo-100 via-white to-purple-100 mb-6 flex items-center justify-center relative overflow-hidden border-4 border-white/80 shadow-xl">
-                      <img
-                        src="/portfolio/profile-pic.jpg"
-                        alt="Sai Tarun Reddy"
-                        className="w-48 h-48 lg:w-56 lg:h-56 rounded-full object-cover"
-                      />
-                    </div>
+                                         {/* Profile Image */}
+                     <div className="w-48 h-48 lg:w-56 lg:h-56 bg-gradient-to-br from-indigo-100 via-white to-purple-100 mb-6 flex items-center justify-center relative overflow-hidden border-4 border-white/80 shadow-xl rounded-3xl">
+                       <img
+                         src="/portfolio/profile-pic.jpg"
+                         alt="Sai Tarun Reddy"
+                         className="w-44 h-44 lg:w-52 lg:h-52 object-cover rounded-2xl shadow-lg"
+                       />
+                     </div>
                     
                     {/* Skill Icons */}
                     <div className="flex space-x-4">
