@@ -8,6 +8,9 @@ export default function Hero() {
     { icon: Mail, href: 'mailto:reddytarun223@gmail.com', label: 'Email', color: 'hover:bg-red-500 hover:text-white' }
   ]
 
+  // Get the correct image path based on environment
+  const imagePath = process.env.NODE_ENV === 'production' ? '/portfolio/profile-pic.jpg' : '/profile-pic.jpg'
+
   return (
     <div className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-slate-50 via-white to-blue-50">
       {/* Simplified Background */}
@@ -150,7 +153,7 @@ export default function Hero() {
                   <div className="relative w-full h-full flex flex-col items-center justify-center p-8">
                     <div className="w-64 h-64 lg:w-72 lg:h-72 bg-gradient-to-br from-indigo-100 via-white to-purple-100 mb-6 flex items-center justify-center relative overflow-hidden border-4 border-white/80 shadow-xl rounded-3xl">
                       <img 
-                        src="/profile-pic.jpg" 
+                        src={imagePath}
                         alt="Sai Tarun Reddy" 
                         className="w-60 h-60 lg:w-68 lg:h-68 object-cover rounded-2xl shadow-lg"
                       />
