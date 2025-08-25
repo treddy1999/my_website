@@ -193,20 +193,20 @@ export default function Hero() {
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 0.6, duration: 0.8, ease: "easeOut" }}
-                         className="relative flex justify-center lg:justify-end lg:pr-8"
+                         className="relative flex justify-center lg:justify-end lg:pr-12"
           >
             <div className="relative">
-                             <div className="relative w-80 h-80 lg:w-96 lg:h-96">
+                             <div className="relative w-96 h-96 lg:w-[28rem] lg:h-[28rem]">
                                  {/* Profile Container */}
                  <div className="relative w-full h-full bg-gradient-to-br from-white via-indigo-50/30 to-purple-50/30 rounded-3xl backdrop-blur-sm border border-white/50 shadow-2xl overflow-hidden">
                   {/* Profile Content */}
                   <div className="relative w-full h-full flex flex-col items-center justify-center p-8">
                                          {/* Profile Image */}
-                     <div className="w-56 h-56 lg:w-64 lg:h-64 bg-gradient-to-br from-indigo-100 via-white to-purple-100 mb-6 flex items-center justify-center relative overflow-hidden border-4 border-white/80 shadow-xl rounded-3xl">
+                     <div className="w-64 h-64 lg:w-72 lg:h-72 bg-gradient-to-br from-indigo-100 via-white to-purple-100 mb-6 flex items-center justify-center relative overflow-hidden border-4 border-white/80 shadow-xl rounded-3xl">
                        <img
                          src="/portfolio/profile-pic.jpg"
                          alt="Sai Tarun Reddy"
-                         className="w-52 h-52 lg:w-60 lg:h-60 object-cover rounded-2xl shadow-lg"
+                         className="w-60 h-60 lg:w-68 lg:h-68 object-cover rounded-2xl shadow-lg"
                        />
                      </div>
                     
