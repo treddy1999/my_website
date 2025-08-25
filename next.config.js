@@ -4,8 +4,8 @@ const nextConfig = {
   trailingSlash: true,
   // Only use basePath for production builds, not development
   ...(process.env.NODE_ENV === 'production' && {
-    basePath: '/portfolio',
-    assetPrefix: '/portfolio/',
+    basePath: '/my_website',
+    assetPrefix: '/my_website/',
   }),
   images: {
     domains: ['images.unsplash.com', 'via.placeholder.com'],
