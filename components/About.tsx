@@ -53,11 +53,11 @@ export default function About() {
    ]
 
      const skills = [
-     { name: "SQL & Data Modeling", icon: Database, level: 95 },
+     { name: "SQL Development", icon: Database, level: 95 },
      { name: "ETL/SSIS Development", icon: Code, level: 90 },
      { name: "Snowflake & Analytics", icon: Sparkles, level: 88 },
-     { name: "Salesforce Integration", icon: Lightbulb, level: 85 },
-     { name: "Full-Stack Development", icon: Star, level: 82 }
+     { name: "Data Analysis", icon: Lightbulb, level: 85 },
+     { name: "Tableau & Reporting", icon: Star, level: 82 }
    ]
 
      const personalInterests = [
@@ -68,10 +68,10 @@ export default function About() {
    ]
 
      const achievements = [
-     { number: "12+", label: "Enterprise Projects", icon: Code },
+     { number: "3+", label: "Years Experience", icon: Code },
      { number: "35%", label: "Performance Improvement", icon: Heart },
-     { number: "5+", label: "Years Experience", icon: Rocket },
-     { number: "4", label: "Certifications", icon: Star }
+     { number: "4", label: "Certifications", icon: Rocket },
+     { number: "MS", label: "Information Systems", icon: Star }
    ]
 
   return (
@@ -148,11 +148,10 @@ export default function About() {
              whileInView={{ opacity: 1, y: 0 }}
              transition={{ delay: 0.3, duration: 0.8 }}
            >
-             I'm a passionate Data & Integrations Engineer who believes that great data solutions come from the perfect blend of 
-             <span className="text-indigo-600 font-semibold"> technical expertise</span>, 
-             <span className="text-purple-600 font-semibold"> analytical thinking</span>, and 
-             <span className="text-pink-600 font-semibold"> business understanding</span>. 
-             Let me share my journey and what drives me every day.
+             I'm a results-driven IT professional with a Master's in Information Systems, passionate about 
+             <span className="text-indigo-600 font-semibold"> data engineering</span>. 
+             Hardworking, motivated, and quick to learn; I adapt to new technologies and solve problems independently. 
+             Dedicated to <span className="text-purple-600 font-semibold">continuous growth</span> and eager to contribute to a forward-thinking data team.
            </motion.p>
         </motion.div>
 
@@ -181,10 +180,10 @@ export default function About() {
                    well-structured data in driving business decisions.
                  </p>
                  <p>
-                   From optimizing SSIS ETL pipelines that cut run time from 6 hours to 30 minutes, to building 
+                   From optimizing SSIS ETL pipelines that cut run time by 35%, to building 
                    Snowflake data warehouses that serve thousands of users, every project has been a stepping stone 
                    in my continuous learning adventure. I've had the privilege to work with amazing teams at 
-                   Incentives Software, K2K Hospitality Services, and CSU Research.
+                   Incentives Software, K2K Hospitality Services, and Cleveland State University.
                  </p>
                  <p>
                    What excites me most is the intersection of data, technology, and business impact. 

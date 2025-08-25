@@ -6,16 +6,31 @@ import { Calendar, MapPin, ExternalLink } from 'lucide-react'
 export default function Experience() {
   const experiences = [
     {
+      title: 'Freelance Data Engineer',
+      company: 'MetricsZero',
+      location: 'Remote',
+      period: 'Jan 2025 - Current',
+      description: 'Providing specialized data engineering services for monitoring and observability data management.',
+      achievements: [
+        'Ingest & Clean Monitoring Data – Pulled in logs, metrics, and spans from Datadog, New Relic, and CloudWatch',
+        'ETL & Data Warehousing – Built pipelines in Snowflake, Redshift, and BigQuery to store and organize monitoring data',
+        'Automate Cost Checks – Wrote scripts to flag unused custom metrics, high-cardinality tags, and redundant spans',
+        'Data Quality – Developed validations to ensure observability data matched billing data accurately'
+      ],
+      technologies: ['SQL', 'Python', 'Snowflake', 'Redshift', 'BigQuery', 'Datadog', 'New Relic', 'CloudWatch', 'ETL'],
+      link: null
+    },
+    {
       title: 'Graduate Research Assistant — Data Integrations Engineer',
-      company: 'Cleveland State University (CSU)',
+      company: 'Cleveland State University',
       location: 'Cleveland, OH',
       period: 'Jan 2025 - May 2025',
-      description: 'Designed and implemented production-level ETL workflows integrating academic systems with modern data platforms.',
+      description: 'Designed and implemented ETL workflows integrating academic systems with modern data platforms.',
       achievements: [
-        'Designed production-level ETL workflows (SSIS, Python) integrating academic systems with SQL Server & Snowflake',
-        'Delivered Tableau dashboards & SSRS reports for faculty and admin',
-        'Implemented data governance controls improving accuracy and compliance',
-        'Optimized data processing workflows reducing processing time by 40%'
+        'Designed ETL workflows (SSIS, Python) integrating academic systems with SQL Server and Snowflake',
+        'Developed data quality automation (validation queries, reconciliation checks) improving trust in institutional reporting',
+        'Delivered Tableau/SSRS dashboards for faculty and administration, enabling data-driven decisions',
+        'Implemented governance controls aligned to policy'
       ],
       technologies: ['SSIS', 'Python', 'SQL Server', 'Snowflake', 'Tableau', 'SSRS', 'Data Governance'],
       link: 'https://csuohio.edu'
@@ -27,12 +42,12 @@ export default function Experience() {
       period: 'Jul 2023 - Dec 2024',
       description: 'Provided specialized data engineering and integration solutions for hospitality industry clients.',
       achievements: [
-        'Built SQL Server/Snowflake pipelines using SSIS/Informatica for KPI & compliance reporting',
-        'Developed Salesforce integrations for consistent cross-system data flows',
-        'Reduced reporting delays by ~30% through performance tuning & migration troubleshooting',
+        'Built and maintained data pipelines across finance and operations using SQL Server, Snowflake, and SSIS/Informatica',
+        'Created Tableau dashboards to visualize KPIs and compliance metrics; partnered with stakeholders to refine requirements',
+        'Tuned SQL and improved processes, reducing reporting delays by 30% and improving audit readiness',
         'Delivered automated reporting solutions improving operational efficiency'
       ],
-      technologies: ['SQL Server', 'Snowflake', 'SSIS', 'Informatica', 'Salesforce', 'ETL', 'Performance Tuning'],
+      technologies: ['SQL Server', 'Snowflake', 'SSIS', 'Informatica', 'Tableau', 'ETL', 'Performance Tuning'],
       link: null
     },
     {
@@ -42,10 +57,10 @@ export default function Experience() {
       period: 'Apr 2020 - May 2023',
       description: 'Led data migration projects and optimized ETL processes for enterprise clients.',
       achievements: [
-        'Led Oracle → SQL Server/Snowflake migrations, performing reconciliation & integrity checks',
-        'Optimized SSIS/Informatica ETL jobs (~35% faster) and tuned reporting/transactional databases',
-        'Built executive Tableau dashboards for KPIs & compliance; improved audit readiness',
-        'Delivered secure Salesforce integrations and mentored 4 junior developers on SQL/ETL'
+        'Led data migrations from Oracle to SQL Server and Snowflake; built optimized ETL transformations cutting processing time by 35%',
+        'Managed and tuned databases for transactional and reporting workloads; delivered executive-level Tableau dashboards for KPIs and compliance',
+        'Developed Salesforce data flows and collaborated cross-functionally to improve reporting accuracy and governance',
+        'Mentored junior developers on SQL optimization and ETL best practices to uplift team delivery'
       ],
       technologies: ['Oracle', 'SQL Server', 'Snowflake', 'SSIS', 'Informatica', 'Tableau', 'Salesforce', 'ETL'],
       link: null

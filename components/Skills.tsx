@@ -36,7 +36,6 @@ export default function Skills() {
          { name: 'Snowflake', level: 90, icon: '❄️', description: 'Cloud data warehouse platform expertise' },
          { name: 'Oracle', level: 85, icon: '🔶', description: 'Enterprise database administration' },
          { name: 'PostgreSQL', level: 80, icon: '🐘', description: 'Open-source relational database' },
-         { name: 'MySQL', level: 75, icon: '🐬', description: 'Relational database management' },
          { name: 'Data Modeling', level: 90, icon: '🏗️', description: 'Database design and schema optimization' }
        ]
      },
@@ -50,9 +49,8 @@ export default function Skills() {
        skills: [
          { name: 'SSIS', level: 95, icon: '🔄', description: 'SQL Server Integration Services' },
          { name: 'Informatica', level: 90, icon: '⚡', description: 'Enterprise data integration platform' },
-         { name: 'BOOMi', level: 85, icon: '🌐', description: 'Cloud-native integration platform' },
-         { name: 'API Integrations', level: 88, icon: '🔗', description: 'RESTful API development and integration' },
-         { name: 'Middleware', level: 80, icon: '🔧', description: 'Data transformation and routing' },
+         { name: 'Boomi', level: 85, icon: '🌐', description: 'Cloud-native integration platform' },
+         { name: 'APIs', level: 88, icon: '🔗', description: 'RESTful API development and integration' },
          { name: 'Data Transformations', level: 92, icon: '🔄', description: 'ETL pipeline development and optimization' }
        ]
      },
@@ -65,27 +63,10 @@ export default function Skills() {
        description: 'Business intelligence and data visualization',
        skills: [
          { name: 'Tableau', level: 90, icon: '📊', description: 'Data visualization and analytics' },
-         { name: 'SQL Reporting Services', level: 88, icon: '📈', description: 'Microsoft SQL Server Reporting Services' },
-         { name: 'Data Analytics', level: 85, icon: '📋', description: 'Business intelligence and insights' },
+         { name: 'SSRS', level: 88, icon: '📈', description: 'Microsoft SQL Server Reporting Services' },
+         { name: 'Data Analysis', level: 85, icon: '📋', description: 'Business intelligence and insights' },
          { name: 'Dashboard Design', level: 82, icon: '🎨', description: 'Interactive dashboard creation' },
-         { name: 'Report Automation', level: 88, icon: '🤖', description: 'Automated reporting solutions' },
-         { name: 'KPI Monitoring', level: 85, icon: '📊', description: 'Key performance indicator tracking' }
-       ]
-     },
-     {
-       id: 'crm',
-       name: 'CRM & Platforms',
-       icon: Cloud,
-       color: 'from-orange-500 to-red-600',
-       bgColor: 'from-orange-50 to-red-50',
-       description: 'Customer relationship management and platform integrations',
-       skills: [
-         { name: 'Salesforce', level: 90, icon: '☁️', description: 'CRM platform integration and automation' },
-         { name: 'Salesforce Reports', level: 88, icon: '📊', description: 'Custom report development' },
-         { name: 'Salesforce Dashboards', level: 85, icon: '📈', description: 'Interactive dashboard creation' },
-         { name: 'Platform Integrations', level: 82, icon: '🔗', description: 'Cross-platform data synchronization' },
-         { name: 'Workflow Automation', level: 85, icon: '⚙️', description: 'Business process automation' },
-         { name: 'Data Synchronization', level: 88, icon: '🔄', description: 'Real-time data integration' }
+         { name: 'Report Automation', level: 88, icon: '🤖', description: 'Automated reporting solutions' }
        ]
      },
      {
@@ -98,10 +79,24 @@ export default function Skills() {
        skills: [
          { name: 'Data Governance', level: 90, icon: '🛡️', description: 'Data quality and compliance management' },
          { name: 'Compliance', level: 88, icon: '✅', description: 'Regulatory compliance and audit readiness' },
-         { name: 'Process Improvement', level: 85, icon: '📈', description: 'Continuous improvement methodologies' },
          { name: 'Agile/Scrum', level: 88, icon: '🏃', description: 'Agile development and project management' },
-         { name: 'Technical Support', level: 85, icon: '🛠️', description: 'End-user support and troubleshooting' },
+         { name: 'On Call Support', level: 85, icon: '🛠️', description: 'Technical support and troubleshooting' },
          { name: 'Migration Strategy', level: 90, icon: '🚀', description: 'Data migration planning and execution' }
+       ]
+     },
+     {
+       id: 'other',
+       name: 'Other Skills',
+       icon: Cloud,
+       color: 'from-orange-500 to-red-600',
+       bgColor: 'from-orange-50 to-red-50',
+       description: 'Additional technical and soft skills',
+       skills: [
+         { name: 'Data Analysis', level: 90, icon: '📊', description: 'Analytical thinking and insights generation' },
+         { name: 'Collaboration', level: 88, icon: '🤝', description: 'Cross-functional team collaboration' },
+         { name: 'Problem Solving', level: 92, icon: '🧩', description: 'Analytical thinking and creative solutions' },
+         { name: 'Continuous Learning', level: 95, icon: '📚', description: 'Adapting to new technologies quickly' },
+         { name: 'Independent Work', level: 90, icon: '🎯', description: 'Self-directed problem solving' }
        ]
      },
      {
@@ -116,8 +111,7 @@ export default function Skills() {
          { name: 'Stakeholder Management', level: 85, icon: '🤝', description: 'Managing business relationships' },
          { name: 'Communication', level: 90, icon: '💬', description: 'Clear technical and business communication' },
          { name: 'Problem Solving', level: 92, icon: '🧩', description: 'Analytical thinking and creative solutions' },
-         { name: 'Project Management', level: 85, icon: '📋', description: 'Agile methodologies and delivery' },
-         { name: 'Data Storytelling', level: 88, icon: '📊', description: 'Presenting insights effectively' }
+         { name: 'Project Management', level: 85, icon: '📋', description: 'Agile methodologies and delivery' }
        ]
      }
   ]
@@ -216,7 +210,7 @@ export default function Skills() {
              whileInView={{ opacity: 1, y: 0 }}
              transition={{ delay: 0.3, duration: 0.8 }}
            >
-             A comprehensive data engineering toolkit built through 5+ years of hands-on experience. 
+             A comprehensive data engineering toolkit built through 3+ years of hands-on experience. 
              Each skill represents real-world projects, enterprise solutions, and continuous learning in the data landscape.
            </motion.p>
         </motion.div>

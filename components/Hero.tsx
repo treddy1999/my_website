@@ -1,3 +1,4 @@
+import React from 'react'
 import { ChevronDown, Download, Eye, Github, Linkedin, Twitter, Mail, Sparkles, Code, Zap, Star, Heart } from 'lucide-react'
 
 export default function Hero() {
@@ -53,13 +54,13 @@ export default function Hero() {
               </h1>
               
               <div className="flex flex-wrap items-center gap-3 text-lg lg:text-xl text-slate-700 font-semibold">
-                <span>Passionate</span>
+                <span>Results-driven</span>
                 <span className="px-3 py-1 bg-gradient-to-r from-blue-100 to-indigo-100 text-indigo-700 rounded-full text-base">
                   Data Engineer
                 </span>
                 <span>&</span>
                 <span className="px-3 py-1 bg-gradient-to-r from-purple-100 to-pink-100 text-purple-700 rounded-full text-base">
-                  Full-Stack Developer
+                  IT Professional
                 </span>
               </div>
             </div>
@@ -67,26 +68,27 @@ export default function Hero() {
             {/* Description */}
             <div className="space-y-4">
               <p className="text-base lg:text-lg text-slate-600 leading-relaxed">
-                I help organizations turn messy data into <span className="text-indigo-600 font-semibold">actionable insights</span>. 
-                With 3+ years in SQL, Snowflake, ETL/SSIS, and Salesforce, I've delivered <span className="text-purple-600 font-semibold">automated pipelines</span> 
-                that improved reporting speed by 35% and reduced errors by 20%.
+                Results-driven IT professional with 3+ years of experience and a Master's in Information Systems, 
+                passionate about <span className="text-indigo-600 font-semibold">data engineering</span>. 
+                Skilled in SQL development, data transformations, and analysis with a proven ability to turn 
+                <span className="text-purple-600 font-semibold">complex datasets into actionable insights</span>.
               </p>
               
               <div className="flex flex-wrap gap-2">
                 <span className="px-3 py-1 bg-gradient-to-r from-indigo-50 to-purple-50 text-indigo-700 rounded-lg text-sm font-medium border border-indigo-200/50">
-                  SQL Expert
+                  SQL Development
                 </span>
                 <span className="px-3 py-1 bg-gradient-to-r from-indigo-50 to-purple-50 text-indigo-700 rounded-lg text-sm font-medium border border-indigo-200/50">
-                  Snowflake Specialist
+                  Snowflake
                 </span>
                 <span className="px-3 py-1 bg-gradient-to-r from-indigo-50 to-purple-50 text-indigo-700 rounded-lg text-sm font-medium border border-indigo-200/50">
-                  ETL/SSIS Pro
+                  ETL/SSIS
                 </span>
                 <span className="px-3 py-1 bg-gradient-to-r from-indigo-50 to-purple-50 text-indigo-700 rounded-lg text-sm font-medium border border-indigo-200/50">
-                  Salesforce Integration
+                  Data Analysis
                 </span>
                 <span className="px-3 py-1 bg-gradient-to-r from-indigo-50 to-purple-50 text-indigo-700 rounded-lg text-sm font-medium border border-indigo-200/50">
-                  Data Analytics
+                  Tableau
                 </span>
               </div>
             </div>
@@ -98,12 +100,12 @@ export default function Hero() {
                 <div className="text-xs font-medium text-slate-600 mt-1">Years Experience</div>
               </div>
               <div className="p-3 rounded-xl bg-gradient-to-br from-purple-50 to-pink-50 border border-white/50">
-                <div className="text-2xl lg:text-3xl font-black bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent">12+</div>
-                <div className="text-xs font-medium text-slate-600 mt-1">Enterprise Projects</div>
+                <div className="text-2xl lg:text-3xl font-black bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent">35%</div>
+                <div className="text-xs font-medium text-slate-600 mt-1">Performance Boost</div>
               </div>
               <div className="p-3 rounded-xl bg-gradient-to-br from-green-50 to-emerald-50 border border-white/50">
-                <div className="text-2xl lg:text-3xl font-black bg-gradient-to-r from-green-500 to-emerald-500 bg-clip-text text-transparent">35%</div>
-                <div className="text-xs font-medium text-slate-600 mt-1">Performance Boost</div>
+                <div className="text-2xl lg:text-3xl font-black bg-gradient-to-r from-green-500 to-emerald-500 bg-clip-text text-transparent">4</div>
+                <div className="text-xs font-medium text-slate-600 mt-1">Certifications</div>
               </div>
             </div>
 
