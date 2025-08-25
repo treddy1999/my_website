@@ -309,10 +309,6 @@ export default function Contact() {
                 <div className="space-y-2 ml-6">
                   <div className="flex items-center space-x-2">
                     <span className="w-2 h-2 bg-primary-500 rounded-full"></span>
-                    <span className="text-sm text-neutral-700">Snowflake SnowPro Core</span>
-                  </div>
-                  <div className="flex items-center space-x-2">
-                    <span className="w-2 h-2 bg-primary-500 rounded-full"></span>
                     <span className="text-sm text-neutral-700">Microsoft Certified: Data Engineer Associate</span>
                   </div>
                   <div className="flex items-center space-x-2">

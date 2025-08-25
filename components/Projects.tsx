@@ -49,153 +49,83 @@ export default function Projects() {
   const [hoveredProject, setHoveredProject] = useState<number | null>(null)
 
            const filters = [
-      { id: 'all', name: 'All Projects', icon: Target, count: 6 },
-      { id: 'dashboard', name: 'Data & Analytics', icon: BarChart3, count: 5 },
-      { id: 'web', name: 'Integrations', icon: Code, count: 1 },
+      { id: 'all', name: 'All Projects', icon: Target, count: 3 },
+      { id: 'dashboard', name: 'Data & Analytics', icon: BarChart3, count: 3 },
+      { id: 'web', name: 'Integrations', icon: Code, count: 0 },
     ]
 
            const projects: Project[] = [
       {
         id: 1,
-        title: 'Oracle to Snowflake Data Migration',
-        description: 'Led enterprise-wide migration from Oracle to Snowflake cloud data warehouse, including data reconciliation, integrity checks, and automated ETL pipeline development.',
+        title: 'Customer Data Transformation in Snowflake',
+        description: 'Built SQL pipelines to clean and standardize customer data, reducing duplicates by 35% and improving reporting accuracy.',
         image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=600&fit=crop',
         category: 'dashboard',
-        technologies: ['Oracle', 'Snowflake', 'SSIS', 'SQL', 'Python', 'Data Migration'],
-        liveUrl: 'https://oracle-snowflake-migration-demo.com',
-        githubUrl: 'https://github.com/saitarunreddye/oracle-snowflake-migration',
+        technologies: ['Snowflake', 'SQL', 'Data Cleaning', 'ETL', 'Data Quality'],
+        liveUrl: '#',
+        githubUrl: '#',
         features: [
-          'Enterprise data warehouse migration',
-          'Data reconciliation and validation',
-          'Automated ETL pipeline development',
-          'Performance optimization',
-          'Data governance implementation'
+          'SQL pipeline development for data cleaning',
+          'Customer data standardization',
+          'Duplicate detection and removal',
+          'Data quality improvement',
+          'Reporting accuracy enhancement'
         ],
         metrics: {
-          users: '2K+',
-          performance: '98%',
+          users: '500+',
+          performance: '95%',
           uptime: '99.9%'
         },
-        highlight: 'Reduced query time by 75%',
+        highlight: 'Reduced duplicates by 35%',
         status: 'featured'
       },
       {
         id: 2,
-        title: 'SSIS ETL Pipeline Optimization',
-        description: 'Optimized critical SSIS ETL pipelines reducing processing time from 6 hours to 30 minutes through parallel processing, data validation, and performance tuning.',
+        title: 'ETL Pipeline for Marketing Analytics',
+        description: 'Consolidated sales and campaign data in Snowflake, reducing manual effort by 40% and enabling ROI dashboards for business teams.',
         image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop',
         category: 'dashboard',
-        technologies: ['SSIS', 'SQL Server', 'C#', 'PowerShell', 'Performance Tuning', 'ETL'],
-        liveUrl: 'https://ssis-optimization-demo.com',
-        githubUrl: 'https://github.com/saitarunreddye/ssis-optimization',
+        technologies: ['Snowflake', 'ETL', 'Marketing Analytics', 'SQL', 'ROI Dashboards'],
+        liveUrl: '#',
+        githubUrl: '#',
         features: [
-          'Parallel processing implementation',
-          'Data validation and error handling',
-          'Performance monitoring dashboard',
-          'Automated scheduling and alerting',
-          'Logging and audit trails'
+          'Sales and campaign data consolidation',
+          'Automated ETL pipeline development',
+          'ROI dashboard creation',
+          'Manual effort reduction',
+          'Business team enablement'
         ],
         metrics: {
-          users: '500+',
-          performance: '99%',
-          uptime: '99.9%'
+          users: '200+',
+          performance: '98%',
+          uptime: '99.8%'
         },
-        highlight: 'Reduced processing time by 92%',
+        highlight: 'Reduced manual effort by 40%',
         status: 'featured'
       },
       {
         id: 3,
-        title: 'Salesforce-Snowflake Integration',
-        description: 'Built automated data synchronization between Salesforce CRM and Snowflake data warehouse, enabling real-time analytics and reporting for sales operations.',
+        title: 'Query Performance Tuning',
+        description: 'Optimized BI SQL queries (joins, CTEs, window functions), cutting report runtime by up to 50% and improving stakeholder satisfaction.',
         image: 'https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=800&h=600&fit=crop',
-        category: 'web',
-        technologies: ['Salesforce', 'Snowflake', 'SSIS', 'SQL', 'REST APIs', 'Data Sync'],
-        liveUrl: 'https://salesforce-snowflake-integration-demo.com',
-        githubUrl: 'https://github.com/saitarunreddye/salesforce-snowflake-integration',
+        category: 'dashboard',
+        technologies: ['SQL Optimization', 'BI Queries', 'Performance Tuning', 'CTEs', 'Window Functions'],
+        liveUrl: '#',
+        githubUrl: '#',
         features: [
-          'Real-time data synchronization',
-          'Automated ETL pipelines',
-          'Data validation and error handling',
-          'Sales analytics dashboard',
-          'Custom Salesforce triggers'
+          'BI SQL query optimization',
+          'Join optimization strategies',
+          'CTE and window function tuning',
+          'Report runtime improvement',
+          'Stakeholder satisfaction enhancement'
         ],
         metrics: {
           users: '300+',
-          performance: '96%',
-          uptime: '99.7%'
-        },
-        highlight: 'Improved data accuracy by 40%',
-        status: 'popular'
-      },
-      {
-        id: 4,
-        title: 'Tableau Executive Dashboard',
-        description: 'Developed comprehensive executive dashboards using Tableau for KPIs and compliance reporting, improving audit readiness and decision-making capabilities.',
-        image: 'https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=800&h=600&fit=crop',
-        category: 'dashboard',
-        technologies: ['Tableau', 'SQL', 'Snowflake', 'Data Visualization', 'KPI Monitoring'],
-        liveUrl: 'https://tableau-executive-dashboard-demo.com',
-        githubUrl: 'https://github.com/saitarunreddye/tableau-dashboards',
-        features: [
-          'Executive KPI dashboards',
-          'Compliance reporting automation',
-          'Interactive data visualizations',
-          'Real-time data refresh',
-          'Mobile-responsive design'
-        ],
-        metrics: {
-          users: '200+',
-          performance: '97%',
-          uptime: '99.8%'
-        },
-        highlight: 'Improved audit readiness by 60%',
-        status: 'new'
-      },
-      {
-        id: 5,
-        title: 'Data Governance Implementation',
-        description: 'Implemented comprehensive data governance framework including data quality controls, compliance monitoring, and automated reporting for regulatory requirements.',
-        image: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=800&h=600&fit=crop',
-        category: 'dashboard',
-        technologies: ['Data Governance', 'SQL', 'Python', 'Compliance', 'Automation'],
-        liveUrl: 'https://data-governance-demo.com',
-        githubUrl: 'https://github.com/saitarunreddye/data-governance',
-        features: [
-          'Data quality monitoring',
-          'Compliance reporting automation',
-          'Audit trail implementation',
-          'Data lineage tracking',
-          'Automated alerting system'
-        ],
-        metrics: {
-          users: '150+',
           performance: '99%',
           uptime: '99.9%'
         },
-        highlight: 'Improved compliance score by 85%'
-      },
-      {
-        id: 6,
-        title: 'Informatica ETL Development',
-        description: 'Developed enterprise-grade ETL solutions using Informatica PowerCenter for data integration, transformation, and loading across multiple source systems.',
-        image: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&h=600&fit=crop',
-        category: 'dashboard',
-        technologies: ['Informatica', 'ETL', 'Data Integration', 'SQL', 'Data Transformation'],
-        liveUrl: 'https://informatica-etl-demo.com',
-        githubUrl: 'https://github.com/saitarunreddye/informatica-etl',
-        features: [
-          'Enterprise ETL development',
-          'Multi-source data integration',
-          'Data transformation workflows',
-          'Performance optimization',
-          'Error handling and recovery'
-        ],
-        metrics: {
-          users: '1K+',
-          performance: '95%',
-          uptime: '99.6%'
-        },
-        highlight: 'Improved data processing efficiency by 35%'
+        highlight: 'Cut report runtime by up to 50%',
+        status: 'popular'
       }
     ]
 
