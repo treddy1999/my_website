@@ -87,9 +87,9 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} ${jetbrainsMono.variable}`}>
       <head>
-        <link rel="icon" href="/favicon.ico" />
-        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-        <link rel="manifest" href="/manifest.json" />
+        <link rel="icon" href={process.env.NODE_ENV === 'production' ? '/portfolio/favicon.ico' : '/favicon.ico'} />
+        <link rel="apple-touch-icon" href={process.env.NODE_ENV === 'production' ? '/portfolio/apple-touch-icon.png' : '/apple-touch-icon.png'} />
+        <link rel="manifest" href={process.env.NODE_ENV === 'production' ? '/portfolio/manifest.json' : '/manifest.json'} />
         <meta name="theme-color" content="#2563eb" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </head>
