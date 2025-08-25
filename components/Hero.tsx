@@ -6,7 +6,7 @@ import { ChevronDown, Download, Eye, Github, Linkedin, Twitter, Mail, Sparkles, 
 export default function Hero() {
   const handleDownloadResume = () => {
     const link = document.createElement('a')
-    link.href = '/resume.pdf'
+    link.href = '/portfolio/resume.pdf'
     link.download = 'Sai_Tarun_Resume.pdf'
     link.click()
   }
@@ -204,7 +204,7 @@ export default function Hero() {
                     {/* Profile Image */}
                     <div className="w-48 h-48 lg:w-56 lg:h-56 rounded-full bg-gradient-to-br from-indigo-100 via-white to-purple-100 mb-6 flex items-center justify-center relative overflow-hidden border-4 border-white/80 shadow-xl">
                       <img
-                        src="/profile-pic.jpg"
+                        src="/portfolio/profile-pic.jpg"
                         alt="Sai Tarun Reddy"
                         className="w-48 h-48 lg:w-56 lg:h-56 rounded-full object-cover"
                       />
