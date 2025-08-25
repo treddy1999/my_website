@@ -13,17 +13,7 @@ import Footer from '@/components/Footer'
 import BackToTop from '@/components/BackToTop'
 
 export default function Home() {
-  const [isLoading, setIsLoading] = useState(false) // Start with false for static export
   const [activeSection, setActiveSection] = useState('home')
-
-  useEffect(() => {
-    // Only show loading briefly if needed for hydration
-    const timer = setTimeout(() => {
-      setIsLoading(false)
-    }, 100)
-
-    return () => clearTimeout(timer)
-  }, [])
 
   useEffect(() => {
     const handleScroll = () => {
@@ -48,34 +38,12 @@ export default function Home() {
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
-  if (isLoading) {
-    return (
-      <div className="min-h-screen flex items-center justify-center bg-neutral-50">
-        <motion.div
-          initial={{ opacity: 0, scale: 0.8 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.5 }}
-          className="text-center"
-        >
-          <div className="w-16 h-16 border-4 border-primary-200 border-t-primary-600 rounded-full animate-spin mx-auto mb-4"></div>
-          <p className="text-neutral-600 font-medium">Loading Portfolio...</p>
-        </motion.div>
-      </div>
-    )
-  }
-
   return (
     <div className="min-h-screen bg-neutral-50">
       <Header activeSection={activeSection} />
       
       <main>
-        <AnimatePresence mode="wait">
-          <motion.div
-            key="main-content"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.6 }}
-          >
+        <div>
             {/* Hero Section */}
             <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden">
               <Hero />
@@ -115,9 +83,8 @@ export default function Home() {
                 <Contact />
               </div>
             </section>
-          </motion.div>
-        </AnimatePresence>
-      </main>
+          </div>
+        </main>
 
       <Footer />
       <BackToTop />
