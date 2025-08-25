@@ -86,7 +86,7 @@ export default function Header({ activeSection }: HeaderProps) {
               onClick={() => {
                 // Download resume functionality
                 const link = document.createElement('a')
-                link.href = '/portfolio/resume.pdf'
+                link.href = '/resume.pdf'
                 link.download = 'Sai_Tarun_Resume.pdf'
                 link.click()
               }}
@@ -139,7 +139,7 @@ export default function Header({ activeSection }: HeaderProps) {
                     className="btn-primary w-full"
                     onClick={() => {
                       const link = document.createElement('a')
-                      link.href = '/portfolio/resume.pdf'
+                      link.href = '/resume.pdf'
                       link.download = 'Sai_Tarun_Resume.pdf'
                       link.click()
                       setIsMobileMenuOpen(false)
